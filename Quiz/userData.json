@@ -42,5 +42,25 @@
     "QuizIds": [
       2
     ]
+  },
+  {
+    "Id": 5,
+    "FirstName": "Tatuli",
+    "LastName": "Tsikhishvili",
+    "Username": "tatuli",
+    "Password": "tatuli",
+    "Age": 20,
+    "MaxScore": 0,
+    "QuizIds": []
+  },
+  {
+    "Id": 6,
+    "FirstName": "Anuki",
+    "LastName": "Tsikhishvili",
+    "Username": "Cixisha",
+    "Password": "cixisha",
+    "Age": 23,
+    "MaxScore": 0,
+    "QuizIds": []
   }
 ]

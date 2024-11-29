@@ -22,7 +22,6 @@ namespace Services
         public void DisplayTopTenUsers()
         {
             var topUsers = _jsonRepository.TopTenUsers();
-            Console.WriteLine("Top 10 Users:");
             foreach (var user in topUsers)
             {
                 Console.WriteLine($"{user.FirstName} {user.LastName} ({user.Username}) - Max Score: {user.MaxScore}");
@@ -32,7 +31,7 @@ namespace Services
         {
             while (true)
             {
-                Console.WriteLine("Choose one: \n1. Register \n2. Login \n3. Exit");
+                Console.WriteLine("Choose one: \n1. Register \n2. Login \n3. Display Top 10 \n4. exit");
                 if (int.TryParse(Console.ReadLine(), out int chosenNumber) && chosenNumber >= 1 && chosenNumber <= 3)
                 {
                     switch (chosenNumber)
@@ -44,6 +43,9 @@ namespace Services
                             LoginUserUsingConsole();
                             break;
                         case 3:
+                            DisplayTopTenUsers();
+                            break;
+                        case 4:
                             Console.WriteLine("You exited.");
                             return; 
                         default:

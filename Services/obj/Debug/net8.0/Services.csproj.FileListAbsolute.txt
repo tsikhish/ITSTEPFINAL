@@ -15,3 +15,4 @@ C:\Users\Mari\source\repos\Quiz\Services\obj\Debug\net8.0\Services.dll
 C:\Users\Mari\source\repos\Quiz\Services\obj\Debug\net8.0\refint\Services.dll
 C:\Users\Mari\source\repos\Quiz\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\Mari\source\repos\Quiz\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Mari\source\repos\Quiz\Services\obj\Debug\net8.0\Services.sourcelink.json

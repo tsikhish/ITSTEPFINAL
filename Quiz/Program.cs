@@ -12,9 +12,6 @@ class Program
         var account = new AccountJsonRepository(accountFilePath);
         var quiz = new QuizJsonRepository(quizFilePath);
         var userService = new UserService(account, quiz);
-        Console.WriteLine("Top 10 users: ");
-        userService.DisplayTopTenUsers();
-        Console.WriteLine();
         userService.MainMenu();
     }
 }

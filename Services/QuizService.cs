@@ -21,15 +21,22 @@ namespace Services
         }
         public void SolvingQuiz(string username)
         {
-            var allQuiz = _quizJsonRepository.GetAllQuiz();
-            DisplayQuizs(allQuiz,false);
-            while (true)
+            try
             {
-                var input = ValidationsForSolvingQuiz(allQuiz, username);
-                if (input != -1)
+                var allQuiz = _quizJsonRepository.GetAllQuiz();
+                DisplayQuizs(allQuiz, false);
+                while (true)
                 {
-                    break;
+                    var input = ValidationsForSolvingQuiz(allQuiz, username);
+                    if (input != -1)
+                    {
+                        break;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
        
@@ -40,30 +47,51 @@ namespace Services
         }
         public void CreateQuiz(string username)
         {
-            var user = _accountJsonRepository.GetUserByUsername(username);
-            Quiz quiz = new Quiz
+            try
             {
-                UserId = user.Id,
-                QuizQuestions = new List<PossibleAnswers>()
-            };
-            CreatingEachQuestions(quiz);
-            CreatingInJson(user, quiz);
+                var user = _accountJsonRepository.GetUserByUsername(username);
+                Quiz quiz = new Quiz
+                {
+                    UserId = user.Id,
+                    QuizQuestions = new List<PossibleAnswers>()
+                };
+                CreatingEachQuestions(quiz);
+                CreatingInJson(user, quiz);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
         public void DeleteQuiz(string username)
         {
-            var user = _accountJsonRepository.GetUserByUsername(username);
-            var quizId = ValidationsForDelete(user);
-            if (quizId != -1)
-                SavingDeletionToJson(user, quizId);
+            try
+            {
+                var user = _accountJsonRepository.GetUserByUsername(username);
+                var quizId = ValidationsForDelete(user);
+                if (quizId != -1)
+                    SavingDeletionToJson(user, quizId);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public void UpdateQuiz(string username)
         {
-            var allQuiz = _quizJsonRepository.GetAllQuiz();
-            DisplayQuizs(allQuiz, true);
-            var quiz = FindQuizInJson(username);
-            DisplayQuizs(quiz,true);
-            UpdateInJson(quiz);
+            try
+            {
+                var allQuiz = _quizJsonRepository.GetAllQuiz();
+                DisplayQuizs(allQuiz, true);
+                var quiz = FindQuizInJson(username);
+                DisplayQuizs(quiz, true);
+                UpdateInJson(quiz);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
         private void UpdateInJson(Quiz quiz)
         {
@@ -149,7 +177,7 @@ namespace Services
                 Console.WriteLine("Invalid input. Please try again.");
             }
         }
-        private void DisplayQuizs(List<Quiz> allQuiz,bool showCorrectAnswer = true)
+        private void DisplayQuizs(List<Quiz> allQuiz, bool showCorrectAnswer = true)
         {
             foreach (var quiz in allQuiz)
             {
@@ -160,7 +188,6 @@ namespace Services
                     Console.WriteLine("This quiz has no questions.\n");
                     continue;
                 }
-
                 foreach (var q in quiz.QuizQuestions)
                 {
                     Console.WriteLine($"Question: {q.Question}");
@@ -176,7 +203,6 @@ namespace Services
                     }
                 }
             }
-
         }
         private void DisplayQuizWithoutAnswer(Quiz quiz,string username)
         {

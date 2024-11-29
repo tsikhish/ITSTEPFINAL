@@ -20,3 +20,4 @@ C:\Users\Mari\source\repos\Quiz\Quiz\bin\Debug\net8.0\Repository.dll
 C:\Users\Mari\source\repos\Quiz\Quiz\bin\Debug\net8.0\Repository.pdb
 C:\Users\Mari\source\repos\Quiz\Quiz\bin\Debug\net8.0\Services.dll
 C:\Users\Mari\source\repos\Quiz\Quiz\bin\Debug\net8.0\Services.pdb
+C:\Users\Mari\source\repos\Quiz\Quiz\obj\Debug\net8.0\Quiz.sourcelink.json
