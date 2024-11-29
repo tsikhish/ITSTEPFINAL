@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 1,
+    "FirstName": "Mariam",
+    "LastName": "Tsikhishvili",
+    "Username": "tsikhisha",
+    "Password": "tsikhisha",
+    "Age": 20,
+    "MaxScore": 40,
+    "QuizIds": [
+      1
+    ]
+  },
+  {
+    "Id": 2,
+    "FirstName": "Anna",
+    "LastName": "Tsikhishvili",
+    "Username": "DidiCixisha",
+    "Password": "DidiCixisha",
+    "Age": 23,
+    "MaxScore": 0,
+    "QuizIds": []
+  },
+  {
+    "Id": 3,
+    "FirstName": "Oto",
+    "LastName": "Tsikhishvili",
+    "Username": "PataraCixisha",
+    "Password": "Pataracxsh",
+    "Age": 11,
+    "MaxScore": 20,
+    "QuizIds": []
+  },
+  {
+    "Id": 4,
+    "FirstName": "Oto",
+    "LastName": "Tsikhishvili",
+    "Username": "pataracixisha",
+    "Password": "pataracixisha",
+    "Age": 11,
+    "MaxScore": 20,
+    "QuizIds": [
+      2
+    ]
+  }
+]

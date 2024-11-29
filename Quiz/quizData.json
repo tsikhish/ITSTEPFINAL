@@ -1,0 +1,129 @@
+[
+  {
+    "Id": 0,
+    "QuizQuestions": null,
+    "UserId": 0
+  },
+  {
+    "Id": 1,
+    "QuizQuestions": [
+      {
+        "Id": 1,
+        "Question": "What is the capital of France?",
+        "PossibleAnswer": [
+          "Berlin",
+          "Madrid",
+          "Paris",
+          "Rome"
+        ],
+        "RightAnswer": 3
+      },
+      {
+        "Id": 2,
+        "Question": "What is the largest planet in our solar system",
+        "PossibleAnswer": [
+          "Earth",
+          "Jupiter",
+          "Mars",
+          "Venus"
+        ],
+        "RightAnswer": 2
+      },
+      {
+        "Id": 3,
+        "Question": "How many continents are there on Earth",
+        "PossibleAnswer": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "RightAnswer": 3
+      },
+      {
+        "Id": 4,
+        "Question": "What is the square root of 64",
+        "PossibleAnswer": [
+          "6",
+          "8",
+          "7",
+          "5"
+        ],
+        "RightAnswer": 2
+      },
+      {
+        "Id": 5,
+        "Question": "What is the square root of 16",
+        "PossibleAnswer": [
+          "4",
+          "3",
+          "7",
+          "2"
+        ],
+        "RightAnswer": 1
+      }
+    ],
+    "UserId": 1
+  },
+  {
+    "Id": 2,
+    "QuizQuestions": [
+      {
+        "Id": 1,
+        "Question": "What does 2 plus 2 equal to?",
+        "PossibleAnswer": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "RightAnswer": 4
+      },
+      {
+        "Id": 2,
+        "Question": "What does 2 multiples to 3 equals to?",
+        "PossibleAnswer": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "RightAnswer": 3
+      },
+      {
+        "Id": 3,
+        "Question": "5 plus 6?",
+        "PossibleAnswer": [
+          "10",
+          "11",
+          "12",
+          "14"
+        ],
+        "RightAnswer": 2
+      },
+      {
+        "Id": 4,
+        "Question": "quest4",
+        "PossibleAnswer": [
+          "ans4",
+          "ans2",
+          "ans1",
+          "ans4"
+        ],
+        "RightAnswer": 1
+      },
+      {
+        "Id": 5,
+        "Question": "quest5",
+        "PossibleAnswer": [
+          "ans6",
+          "ans5",
+          "ans1",
+          "ans"
+        ],
+        "RightAnswer": 2
+      }
+    ],
+    "UserId": 4
+  }
+]
